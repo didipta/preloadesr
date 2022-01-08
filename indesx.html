@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/067dbad983.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Preloaders</title>
+</head>
+<body onload="findlocation()" >
+
+    <div id="preloader">
+
+    </div>
+
+    <section id="header">
+      <div class="Top-header">
+       <li class="Top-header-title-1">
+         <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=GTvVlcSPFdLTrfgDClDqDZSzvbPXKkjGrFcRBfFlCxMPhlvsNwZWwTKVzPRNhwqFCVjCKwNVzWKMS" target="_blank"><i class="fas fa-envelope"></i> Companysd@gmail.com</a>
+         <a href="tel:01881291010"> <i class="fas fa-phone-alt"></i> 01881291010</a>
+       </li>
+       <li class="Top-header-title-2">
+       <a href="#">All Services</a>
+       <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+       <a href="#"><i class="far fa-bell"></i></a>
+       </li>
+      </div>
+      <div class="middle-header">
+        <div class="logo">
+          <h2>logo</h2>
+        </div>
+        <div class="search-box">
+          <label>
+            <input type="search" name="search" id="search" class="search" placeholder="Search for anything of your mind...….."><button><i class="fas fa-search"></i></button>
+          </label>
+          <div class="serach-result">
+            <ul>
+              <li>hghghgfh</li>
+              <li>hghghgfh</li>
+              <li>hghghgfh</li>
+              <li>hghghgfh</li>
+              <li>hghghgfh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="middle-header-rigth">
+          <a href="#" class="profile"><i class="fas fa-user-alt"></i><span style="color: white; font-size: .8rem;"> @diptasaha</span></a>
+          <a href="#"><i class="fas fa-comments"></i></a>
+          <a href="https://www.google.com.bd/maps/@22.3352796,91.8415966,15z?hl=en"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+      <div class="navegation">
+        <nav>
+          <ul>
+            <li><a href="#" >Home</a></li>
+            <li><a href="#">All Service <i class="fas fa-chevron-down"></a></i></li>
+            <li><a href="#">Catagories-1 <i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">Catagories-2 <i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section id="slider">
+      <div class="lmage-slider">
+        <img src="https://www.questsearch.co.uk/wp-content/uploads/Lady-on-phone-female.jpg" alt="">
+      </div>
+      <div class="img-slider-2">
+        <h1>Your Personal Assistant</h1>
+        <p>One-stop solution for your services. Order any service, anytime.</p>
+        <button class="mapbutton" id="location-button"><i class="fas fa-map-marker-alt"></i> <span id="locationname"></span></button>
+      </div>
+    </section>
+
+    <section id="footer">
+    
+    </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+   $(window).on("load",function(){
+       $('#preloader').fadeOut(2000);
+   })
+</script>
+<script src="map.js"></script>
+
+    
+</body>
+</html>

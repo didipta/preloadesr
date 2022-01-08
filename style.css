@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Poppins:wght@300&family=Shippori+Antique&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+body
+{
+    width: 100%;
+    background-color:  #122b4dfd;
+    
+}
+#header
+{
+    width: 100%;
+    position:fixed;
+    top:0;
+    left: 0;
+    
+}
+.Top-header
+{
+  width: 100vw;
+  display:flex;
+  background-color: #ececec3f;
+  position: relative;
+  
+}
+.Top-header .Top-header-title-1 a , .Top-header-title-2 a
+{
+    display:inline-block;
+    margin: 3px;
+    margin-left: 15px;
+    color: rgb(238, 238, 238);
+    font-weight: 600;
+    font-size:small;
+    
+}
+.Top-header-title-2
+{
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+.middle-header
+{
+    display:flex;
+    position: relative;
+
+}
+.middle-header .logo
+{
+    position: relative;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+.middle-header .search-box
+{
+    width: 60%;
+    margin-left: 13%;
+    margin-top: 10px;
+}
+.middle-header .search-box label
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.middle-header .search-box label .search
+{
+    width: 100%;
+    outline: none;
+    border: 3px solid #1d90d3c2;
+    border-right: none;
+    padding-left: 10px;
+    color: rgb(231, 231, 231);
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.247);
+    
+}
+.search:focus
+{
+    color: #000;
+    box-shadow: 0 0  5px rgba(199, 223, 236, 0.692);
+}
+input::placeholder
+{
+    color: rgb(214, 214, 214);
+    font-size: small;
+    font-weight: 400;
+}
+.serach-result
+{
+    display: none;
+    width: 60%;
+    position: absolute;
+    left: 0vh;
+    margin-left: 18%;
+    background-color: #1d90d3f5;
+    z-index: 100;
+    color: rgb(255, 254, 254);
+
+}
+.serach-result li
+{
+    margin: 10px;
+}
+.serach-result li:hover
+{
+    color: #000;
+    background-color: rgb(206, 206, 206);
+    padding: 2px;
+}
+.middle-header .search-box button
+{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    font-weight: 800;
+    background-color: #1d90d3c2;
+    border: none;
+    color: white;
+}
+.middle-header-rigth 
+{
+    max-width: 15%;
+    margin: 10px;
+    margin-left:5%;
+    position: relative;
+}
+.middle-header-rigth i{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(216, 216, 216);
+    padding: 5px;
+    border-radius:50%;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.26);
+
+}
+.middle-header-rigth a
+{
+    color: #000;
+    margin-left: 15px;
+}
+
+.navegation
+{
+    width: 100%;
+    position: relative;
+    background-color: #E3EAF6;
+    padding: 10px;
+}
+.navegation nav ul
+{
+    margin-left: 20%;
+}
+.navegation nav ul li{
+    display: inline-block;
+    margin: 5px;
+    margin-left: 30px;
+}
+.navegation ul li a{
+    color: rgb(56, 56, 56);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+#slider
+{
+    position: relative;
+    top:8vw;
+    width: 100%;
+    height: 37vw;
+    overflow: hidden;
+    z-index:100;
+
+   
+}
+
+.lmage-slider img
+{
+    width: 100%;
+    height: 600px;
+    z-index: 0;
+}
+.img-slider-2
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:0%;
+    background-color: rgba(8, 8, 8, 0.582);
+    z-index: 1;
+}
+.img-slider-2 h1
+{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-20%);
+    font-size: 2rem;
+    font-weight:bolder;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    margin: 10px;
+}
+.img-slider-2 p
+{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-20%);
+    font-size: .9rem;
+    font-weight:bold;
+    color: rgb(235, 235, 235);
+    letter-spacing: 1px;
+    margin: 10px;
+}
+.img-slider-2 button
+{
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-20%);
+    font-size: 1.1rem;
+    font-weight:bolder;
+    color: rgb(163, 56, 224);
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.568);
+}
+
+#preloader
+{
+    background:#120724 url(preload.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  
+}
