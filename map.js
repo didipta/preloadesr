@@ -12,7 +12,7 @@ const findlocation = () =>{
       .then(res=>res.json())
       .then(data=>{
           console.log(data.results[0].components);
-          const a=data.results[0].components.suburb;
+          const a=data.results[0].components.neighbourhood;
            document.getElementById("locationname").innerHTML=a;
       })
 
